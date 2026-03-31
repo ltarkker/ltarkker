@@ -1,69 +1,35 @@
-<h1 align="center">Gonçalo L. Fernandes</h1>
+# Gonçalo L. Fernandes
 
-<p align="center">
-  <strong>AI/ML Developer</strong> · Porto, Portugal<br>
-  Building production AI systems for enterprise document processing, computer vision, and intelligent automation on Azure Cloud.
-</p>
+`AI/ML Developer`
 
-<p align="center">
-  <a href="https://linkedin.com/in/gonzalo-aiml-dev"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>&nbsp;
-  <a href="mailto:goncalopesfernandes@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-</p>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/gonzalo-aiml-dev)
+
+I build production AI systems on Azure Cloud — multi-model document processing pipelines, computer vision, and intelligent automation. Focused on measurable impact: 95%+ accuracy, thousands of documents processed daily, and real cost reductions in enterprise environments.
 
 ---
 
-### What I Do
+### 🧰 Languages and Tools
 
-I design and deploy multi-model AI pipelines that process thousands of documents daily with 95%+ accuracy — from invoice classification to warehouse auditing. My work sits at the intersection of **Document AI**, **Computer Vision**, and **Cloud Architecture**, always focused on measurable impact in production environments.
-
----
-
-### Tech Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,azure,docker,fastapi,flutter,postgres,redis,git&theme=dark" alt="Core Stack"/>
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" width="40" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="40" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" width="40" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" width="40" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" width="40" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="40" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="40" height="40"/>&nbsp;
+  <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" width="40" height="40"/>&nbsp;
+  <img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics-logomark-color.svg" alt="YOLOv8" width="40" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" width="40" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" width="40" height="40"/>&nbsp;
 </p>
 
-**AI/ML & Document Processing**<br>
-Azure Document Intelligence · Azure AI Foundry · Custom ML Models · OCR · IDP · Multi-Model Orchestration
+**AI/ML & Document Processing** · Azure Document Intelligence · Azure AI Foundry · Custom ML Models · OCR · IDP · Multi-Model Orchestration
 
-**Computer Vision & Deep Learning**<br>
-YOLOv8 · LayoutLMv3 · DeepSORT · Object Detection · Custom Training Pipelines
+**Computer Vision & Deep Learning** · YOLOv8 · LayoutLMv3 · DeepSORT · Object Detection · Custom Training Pipelines
 
-**LLM & GenAI**<br>
-GPT-4.1 · Claude API · Meta Llama · Prompt Engineering · NL-to-SQL · Cost Optimization
+**LLM & GenAI** · GPT-4.1 · Claude API · Meta Llama · Prompt Engineering · NL-to-SQL · Cost Optimization
 
-**Cloud & DevOps**<br>
-Azure Cloud · Logic Apps · Blob Storage · Azure DevOps · Docker · CI/CD · Microservices
-
----
-
-### Highlight Projects
-
-| Project | What It Does | Stack |
-|---------|-------------|-------|
-| **Multi-Model Invoice System** | 19 AI models (classifier + extraction + hybrid + fallback), 95%+ classification, 97%+ extraction accuracy | Azure DI · GPT-4.1 · REST APIs |
-| **Dual-Engine IDP Pipeline** | 5-phase pipeline for 30+ supplier types, parallel extraction with unified JSON output | Azure AI Foundry · Content Understanding · GPT-4.1 |
-| **Financial Doc Pipeline** | 95% time reduction (30 min → <2 min/doc), 200+ docs/day, zero manual intervention | Azure DI · Custom Models · Graph API |
-| **SKYVISION AUDITOR** | Drone-based warehouse auditing replacing ~4.5h manual checks with ≤15 min scans | YOLOv8 · DeepSORT · Isolation Forest · Redis |
-| **Dual LLM Warehouse System** | Full-stack with time-based local/cloud LLM switching, 79% AI cost reduction | FastAPI · Flutter · PostgreSQL · Docker |
-| **LayoutLMv3 Extraction** `[TEST]` | Fine-tuned on 587 docs across 7+ categories, local GPU inference | LayoutLMv3 · FastAPI · Deep Learning |
-
----
-
-### GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ltarkker&show_icons=true&theme=github_dark&hide_border=true&count_private=true" height="165" alt="GitHub Stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ltarkker&layout=compact&theme=github_dark&hide_border=true&langs_count=6" height="165" alt="Top Languages"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ltarkker&theme=github-dark-blue&hide_border=true" alt="GitHub Streak"/>
-</p>
-
----
-
-<p align="center">
-  <em>"The best way to predict the future is to build it."</em>
-</p>
+**Cloud & DevOps** · Azure Cloud · Logic Apps · Blob Storage · Azure DevOps · Docker · CI/CD · Microservices
