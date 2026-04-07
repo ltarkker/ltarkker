@@ -1,46 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="540" height="120" viewBox="0 0 540 120">
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="130" viewBox="0 0 540 130">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="50%" style="stop-color:#1a1a2e"/>
-      <stop offset="100%" style="stop-color:#0d1117"/>
+    <linearGradient id="sbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06080d"/>
+      <stop offset="50%" style="stop-color:#0d1020"/>
+      <stop offset="100%" style="stop-color:#06080d"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#00cec9"/>
-      <stop offset="100%" style="stop-color:#00b894"/>
+      <stop offset="100%" style="stop-color:#00b4d8"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00cec9;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#6c5ce7;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#00cec9;stop-opacity:0.3"/>
+    </linearGradient>
+    <filter id="numGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="540" height="120" rx="12" fill="url(#bg)" stroke="#00cec9" stroke-width="0.5" stroke-opacity="0.3"/>
-  <circle cx="30" cy="20" r="1" fill="white" opacity="0.6"/>
-  <circle cx="80" cy="60" r="0.8" fill="white" opacity="0.4"/>
-  <circle cx="150" cy="15" r="1.2" fill="white" opacity="0.5"/>
-  <circle cx="200" cy="90" r="0.7" fill="white" opacity="0.3"/>
-  <circle cx="260" cy="25" r="1" fill="white" opacity="0.5"/>
-  <circle cx="320" cy="100" r="0.8" fill="white" opacity="0.4"/>
-  <circle cx="380" cy="18" r="1.1" fill="white" opacity="0.6"/>
-  <circle cx="420" cy="80" r="0.6" fill="white" opacity="0.3"/>
-  <circle cx="470" cy="30" r="0.9" fill="white" opacity="0.5"/>
-  <circle cx="510" cy="95" r="1" fill="white" opacity="0.4"/>
-  <circle cx="50" cy="95" r="0.7" fill="white" opacity="0.3"/>
-  <circle cx="130" cy="75" r="0.9" fill="white" opacity="0.4"/>
-  <circle cx="350" cy="55" r="0.6" fill="white" opacity="0.3"/>
-  <circle cx="490" cy="55" r="1" fill="white" opacity="0.5"/>
-  <circle cx="440" cy="45" r="0.8" fill="white" opacity="0.4"/>
-  <circle cx="100" cy="40" r="0.5" fill="white" opacity="0.3"/>
-  <circle cx="300" cy="70" r="0.7" fill="white" opacity="0.4"/>
-  <text x="90" y="50" font-family="'Segoe UI', sans-serif" font-size="13" fill="#8b949e" text-anchor="middle" letter-spacing="2">COMMITS</text>
-  <text x="90" y="82" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="bold" fill="url(#accent)" text-anchor="middle" filter="url(#glow)">610</text>
-  <text x="270" y="50" font-family="'Segoe UI', sans-serif" font-size="13" fill="#8b949e" text-anchor="middle" letter-spacing="2">REPOS</text>
-  <text x="270" y="82" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="bold" fill="url(#accent)" text-anchor="middle" filter="url(#glow)">73</text>
-  <text x="450" y="50" font-family="'Segoe UI', sans-serif" font-size="13" fill="#8b949e" text-anchor="middle" letter-spacing="2">STARS</text>
-  <text x="450" y="82" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="bold" fill="url(#accent)" text-anchor="middle" filter="url(#glow)">16</text>
-  <line x1="180" y1="35" x2="180" y2="95" stroke="#00cec9" stroke-width="0.5" stroke-opacity="0.3"/>
-  <line x1="360" y1="35" x2="360" y2="95" stroke="#00cec9" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <rect width="540" height="130" rx="10" fill="url(#sbg)" stroke="url(#borderGrad)" stroke-width="1"/>
+
+  <!-- Subtle stars -->
+  <circle cx="25" cy="18" r="0.7" fill="white" opacity="0.4"/>
+  <circle cx="85" cy="65" r="0.5" fill="white" opacity="0.3"/>
+  <circle cx="155" cy="12" r="0.8" fill="white" opacity="0.35"/>
+  <circle cx="265" cy="22" r="0.6" fill="white" opacity="0.4"/>
+  <circle cx="385" cy="15" r="0.7" fill="white" opacity="0.35"/>
+  <circle cx="475" cy="30" r="0.5" fill="white" opacity="0.3"/>
+  <circle cx="515" cy="100" r="0.6" fill="white" opacity="0.35"/>
+  <circle cx="50" cy="105" r="0.5" fill="white" opacity="0.3"/>
+  <circle cx="200" cy="95" r="0.4" fill="white" opacity="0.25"/>
+  <circle cx="320" cy="108" r="0.6" fill="white" opacity="0.3"/>
+  <circle cx="440" cy="50" r="0.5" fill="white" opacity="0.25"/>
+
+  <!-- Stat: Commits -->
+  <text x="90" y="48" font-family="'Segoe UI', sans-serif" font-size="10" fill="#4a5568" text-anchor="middle" letter-spacing="3">COMMITS</text>
+  <text x="90" y="85" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#tealGrad)" text-anchor="middle" filter="url(#numGlow)">610</text>
+
+  <!-- Stat: Repos -->
+  <text x="270" y="48" font-family="'Segoe UI', sans-serif" font-size="10" fill="#4a5568" text-anchor="middle" letter-spacing="3">REPOS</text>
+  <text x="270" y="85" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#tealGrad)" text-anchor="middle" filter="url(#numGlow)">73</text>
+
+  <!-- Stat: Stars -->
+  <text x="450" y="48" font-family="'Segoe UI', sans-serif" font-size="10" fill="#4a5568" text-anchor="middle" letter-spacing="3">STARS</text>
+  <text x="450" y="85" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#tealGrad)" text-anchor="middle" filter="url(#numGlow)">16</text>
+
+  <!-- Dividers -->
+  <line x1="180" y1="32" x2="180" y2="100" stroke="#00cec9" stroke-width="0.4" stroke-opacity="0.2"/>
+  <line x1="360" y1="32" x2="360" y2="100" stroke="#00cec9" stroke-width="0.4" stroke-opacity="0.2"/>
+
+  <!-- Bottom accent line -->
+  <line x1="100" y1="115" x2="440" y2="115" stroke="#00cec9" stroke-width="0.3" stroke-opacity="0.15"/>
 </svg>

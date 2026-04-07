@@ -1,181 +1,212 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" style="stop-color:#162447"/>
-      <stop offset="100%" style="stop-color:#0a0e1a"/>
+    <!-- Deep space background -->
+    <radialGradient id="nebula1" cx="25%" cy="40%" r="40%">
+      <stop offset="0%" style="stop-color:#1a0533;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </radialGradient>
+    <radialGradient id="nebula2" cx="75%" cy="55%" r="35%">
+      <stop offset="0%" style="stop-color:#00cec9;stop-opacity:0.08"/>
+      <stop offset="60%" style="stop-color:#0a2647;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </radialGradient>
+    <radialGradient id="nebula3" cx="60%" cy="30%" r="25%">
+      <stop offset="0%" style="stop-color:#6c5ce7;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:transparent"/>
     </radialGradient>
     <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#00cec9;stop-opacity:0.8"/>
-      <stop offset="40%" style="stop-color:#00cec9;stop-opacity:0.2"/>
-      <stop offset="100%" style="stop-color:#00cec9;stop-opacity:0"/>
+      <stop offset="0%" style="stop-color:#00cec9;stop-opacity:0.6"/>
+      <stop offset="30%" style="stop-color:#00cec9;stop-opacity:0.15"/>
+      <stop offset="70%" style="stop-color:#6c5ce7;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:transparent"/>
     </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00cec9;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#00cec9;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#00cec9;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="shootingStar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:white;stop-opacity:0"/>
+      <stop offset="80%" style="stop-color:white;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:white;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <!-- Orbit paths (invisible, used for animation) -->
-    <path id="orbit1" d="M 730,240 A 130,45 -8 1 1 729.99,240" fill="none"/>
-    <path id="orbit2" d="M 820,240 A 220,70 -5 1 1 819.99,240" fill="none"/>
-    <path id="orbit3" d="M 920,240 A 320,95 -3 1 1 919.99,240" fill="none"/>
+    <!-- Orbit paths centered at 600,265 -->
+    <path id="orbit1" d="M 730,265 A 130,42 -6 1 1 729.99,265" fill="none"/>
+    <path id="orbit2" d="M 820,265 A 220,65 -4 1 1 819.99,265" fill="none"/>
+    <path id="orbit3" d="M 920,265 A 320,90 -2 1 1 919.99,265" fill="none"/>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="400" fill="url(#bg)"/>
+  <!-- Deep space background -->
+  <rect width="1200" height="420" fill="#06080d"/>
+  <rect width="1200" height="420" fill="url(#nebula1)"/>
+  <rect width="1200" height="420" fill="url(#nebula2)"/>
+  <rect width="1200" height="420" fill="url(#nebula3)"/>
 
-  <!-- Stars -->
-  <circle cx="50" cy="30" r="1.2" fill="white" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/></circle>
-  <circle cx="120" cy="80" r="0.8" fill="white" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="4s" repeatCount="indefinite"/></circle>
-  <circle cx="200" cy="20" r="1" fill="white" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="3.5s" repeatCount="indefinite"/></circle>
-  <circle cx="300" cy="350" r="1.3" fill="white" opacity="0.5"/>
-  <circle cx="350" cy="50" r="0.7" fill="white" opacity="0.3"><animate attributeName="opacity" values="0.3;0.1;0.3" dur="5s" repeatCount="indefinite"/></circle>
-  <circle cx="450" cy="370" r="1" fill="white" opacity="0.6"/>
-  <circle cx="500" cy="40" r="0.9" fill="white" opacity="0.4"><animate attributeName="opacity" values="0.4;0.15;0.4" dur="4.2s" repeatCount="indefinite"/></circle>
-  <circle cx="550" cy="350" r="1.1" fill="white" opacity="0.5"/>
-  <circle cx="650" cy="25" r="0.8" fill="white" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="3.8s" repeatCount="indefinite"/></circle>
-  <circle cx="700" cy="380" r="1.2" fill="white" opacity="0.4"/>
-  <circle cx="750" cy="15" r="1" fill="white" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="4.5s" repeatCount="indefinite"/></circle>
-  <circle cx="830" cy="60" r="0.6" fill="white" opacity="0.3"/>
-  <circle cx="900" cy="370" r="1.1" fill="white" opacity="0.5"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="3.2s" repeatCount="indefinite"/></circle>
-  <circle cx="950" cy="30" r="0.9" fill="white" opacity="0.6"/>
-  <circle cx="1000" cy="350" r="0.7" fill="white" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="5.5s" repeatCount="indefinite"/></circle>
-  <circle cx="1050" cy="50" r="1.2" fill="white" opacity="0.5"/>
-  <circle cx="1100" cy="380" r="0.8" fill="white" opacity="0.6"><animate attributeName="opacity" values="0.6;0.25;0.6" dur="3.7s" repeatCount="indefinite"/></circle>
-  <circle cx="1150" cy="20" r="1" fill="white" opacity="0.4"/>
-  <circle cx="80" cy="300" r="0.9" fill="white" opacity="0.5"/>
-  <circle cx="160" cy="150" r="0.7" fill="white" opacity="0.3"><animate attributeName="opacity" values="0.3;0.1;0.3" dur="4.8s" repeatCount="indefinite"/></circle>
-  <circle cx="250" cy="280" r="1.1" fill="white" opacity="0.4"/>
-  <circle cx="400" cy="120" r="0.8" fill="white" opacity="0.5"/>
-  <circle cx="480" cy="290" r="1" fill="white" opacity="0.3"/>
-  <circle cx="720" cy="130" r="0.6" fill="white" opacity="0.4"/>
-  <circle cx="850" cy="310" r="0.9" fill="white" opacity="0.5"/>
-  <circle cx="980" cy="150" r="1.2" fill="white" opacity="0.3"/>
-  <circle cx="1080" cy="280" r="0.7" fill="white" opacity="0.5"/>
-  <circle cx="170" cy="370" r="1" fill="#00cec9" opacity="0.3"><animate attributeName="opacity" values="0.3;0.1;0.3" dur="6s" repeatCount="indefinite"/></circle>
-  <circle cx="1030" cy="90" r="0.8" fill="#00cec9" opacity="0.2"/>
-  <circle cx="380" cy="300" r="0.6" fill="#e17055" opacity="0.3"/>
-  <circle cx="870" cy="80" r="0.7" fill="#e17055" opacity="0.2"/>
+  <!-- Star field - dense layer (tiny) -->
+  <circle cx="23" cy="45" r="0.6" fill="white" opacity="0.5"/>
+  <circle cx="67" cy="12" r="0.4" fill="white" opacity="0.3"/>
+  <circle cx="95" cy="178" r="0.5" fill="white" opacity="0.4"/>
+  <circle cx="134" cy="87" r="0.7" fill="white" opacity="0.35"/>
+  <circle cx="178" cy="320" r="0.5" fill="white" opacity="0.4"/>
+  <circle cx="210" cy="15" r="0.8" fill="white" opacity="0.5"><animate attributeName="opacity" values="0.5;0.15;0.5" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="256" cy="390" r="0.4" fill="white" opacity="0.3"/>
+  <circle cx="289" cy="145" r="0.6" fill="white" opacity="0.45"/>
+  <circle cx="334" cy="55" r="0.5" fill="white" opacity="0.35"><animate attributeName="opacity" values="0.35;0.1;0.35" dur="5.5s" repeatCount="indefinite"/></circle>
+  <circle cx="378" cy="340" r="0.7" fill="white" opacity="0.3"/>
+  <circle cx="412" cy="200" r="0.4" fill="white" opacity="0.25"/>
+  <circle cx="456" cy="28" r="0.6" fill="white" opacity="0.5"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="3.2s" repeatCount="indefinite"/></circle>
+  <circle cx="489" cy="380" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="523" cy="110" r="0.8" fill="white" opacity="0.4"/>
+  <circle cx="567" cy="365" r="0.4" fill="white" opacity="0.3"/>
+  <circle cx="612" cy="18" r="0.6" fill="white" opacity="0.45"><animate attributeName="opacity" values="0.45;0.15;0.45" dur="4.8s" repeatCount="indefinite"/></circle>
+  <circle cx="667" cy="395" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="712" cy="30" r="0.7" fill="white" opacity="0.5"/>
+  <circle cx="756" cy="350" r="0.4" fill="white" opacity="0.3"/>
+  <circle cx="789" cy="55" r="0.6" fill="white" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="6s" repeatCount="indefinite"/></circle>
+  <circle cx="834" cy="310" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="878" cy="22" r="0.8" fill="white" opacity="0.45"/>
+  <circle cx="923" cy="380" r="0.4" fill="white" opacity="0.3"/>
+  <circle cx="967" cy="65" r="0.6" fill="white" opacity="0.5"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="3.8s" repeatCount="indefinite"/></circle>
+  <circle cx="1012" cy="340" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="1056" cy="15" r="0.7" fill="white" opacity="0.4"/>
+  <circle cx="1089" cy="390" r="0.4" fill="white" opacity="0.3"/>
+  <circle cx="1134" cy="78" r="0.6" fill="white" opacity="0.5"/>
+  <circle cx="1167" cy="290" r="0.5" fill="white" opacity="0.35"/>
+  <circle cx="45" cy="250" r="0.5" fill="white" opacity="0.4"/>
+  <circle cx="145" cy="400" r="0.6" fill="white" opacity="0.3"/>
+  <circle cx="345" cy="250" r="0.4" fill="white" opacity="0.35"/>
+  <circle cx="645" cy="130" r="0.5" fill="white" opacity="0.3"/>
+  <circle cx="945" cy="180" r="0.6" fill="white" opacity="0.4"/>
+  <circle cx="1145" cy="200" r="0.5" fill="white" opacity="0.35"/>
 
-  <!-- Title -->
-  <text x="600" y="130" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">Gonçalo L. Fernandes</text>
-  <text x="600" y="162" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="1">AI/ML Developer @ COSMOS-OMNI</text>
+  <!-- Coloured accent stars -->
+  <circle cx="120" cy="340" r="0.8" fill="#00cec9" opacity="0.25"><animate attributeName="opacity" values="0.25;0.08;0.25" dur="7s" repeatCount="indefinite"/></circle>
+  <circle cx="980" cy="45" r="0.7" fill="#6c5ce7" opacity="0.2"/>
+  <circle cx="440" cy="380" r="0.6" fill="#e17055" opacity="0.2"/>
+  <circle cx="1100" cy="150" r="0.8" fill="#00cec9" opacity="0.15"/>
+  <circle cx="60" cy="120" r="0.6" fill="#6c5ce7" opacity="0.15"/>
 
-  <!-- Core glow -->
-  <circle cx="600" cy="240" r="60" fill="url(#coreGlow)">
-    <animate attributeName="r" values="55;65;55" dur="4s" repeatCount="indefinite"/>
+  <!-- Shooting star 1 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0" dur="8s" repeatCount="indefinite" begin="2s"/>
+    <line x1="180" y1="60" x2="130" y2="85" stroke="url(#shootingStar)" stroke-width="1.5" stroke-linecap="round">
+      <animate attributeName="x1" values="180;130" dur="0.6s" repeatCount="indefinite" begin="2s"/>
+    </line>
+    <circle cx="180" cy="60" r="1.5" fill="white"/>
+  </g>
+
+  <!-- Shooting star 2 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0.8;0" dur="12s" repeatCount="indefinite" begin="6s"/>
+    <line x1="950" y1="40" x2="900" y2="65" stroke="url(#shootingStar)" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="950" cy="40" r="1.2" fill="white"/>
+  </g>
+
+  <!-- === NAME === -->
+  <text x="600" y="85" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">Gonçalo L. Fernandes</text>
+
+  <!-- Subtitle with COSMOS emphasis -->
+  <text x="600" y="118" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="2.5">
+    AI/ML Developer @
+  </text>
+  <text x="693" y="118" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#00cec9" text-anchor="start" letter-spacing="3" filter="url(#softGlow)">
+    COSMOS-OMNI
+  </text>
+
+  <!-- Thin separator line -->
+  <line x1="480" y1="138" x2="720" y2="138" stroke="url(#shimmer)" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- === SOLAR SYSTEM === -->
+
+  <!-- Core glow (big ambient) -->
+  <circle cx="600" cy="268" r="100" fill="url(#coreGlow)" filter="url(#bigGlow)">
+    <animate attributeName="r" values="95;105;95" dur="6s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="600" cy="240" r="14" fill="#0a0e1a" stroke="#00cec9" stroke-width="1.5" filter="url(#glow)"/>
-  <text x="600" y="245" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#00cec9" text-anchor="middle">G</text>
 
-  <!-- Visible orbit rings -->
-  <ellipse cx="600" cy="240" rx="130" ry="45" fill="none" stroke="#00cec9" stroke-width="0.8" stroke-opacity="0.4" transform="rotate(-8, 600, 240)"/>
-  <ellipse cx="600" cy="240" rx="220" ry="70" fill="none" stroke="#e17055" stroke-width="0.7" stroke-opacity="0.35" transform="rotate(-5, 600, 240)"/>
-  <ellipse cx="600" cy="240" rx="320" ry="95" fill="none" stroke="#a29bfe" stroke-width="0.6" stroke-opacity="0.3" transform="rotate(-3, 600, 240)"/>
+  <!-- Core planet -->
+  <circle cx="600" cy="268" r="16" fill="#0d1117" stroke="#00cec9" stroke-width="1.8" filter="url(#softGlow)"/>
+  <text x="600" y="273" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#00cec9" text-anchor="middle" filter="url(#softGlow)">G</text>
 
-  <!-- ORBIT 1 — Teal (inner) -->
-  <g>
-    <animateMotion dur="20s" repeatCount="indefinite" begin="0s">
-      <mpath href="#orbit1"/>
-    </animateMotion>
-    <circle r="4" fill="#00cec9" opacity="0.9"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#00cec9" text-anchor="middle">Azure</text>
+  <!-- Orbit rings -->
+  <ellipse cx="600" cy="268" rx="130" ry="42" fill="none" stroke="#00cec9" stroke-width="0.6" stroke-opacity="0.25" transform="rotate(-6, 600, 268)" stroke-dasharray="4 6"/>
+  <ellipse cx="600" cy="268" rx="220" ry="65" fill="none" stroke="#e17055" stroke-width="0.5" stroke-opacity="0.2" transform="rotate(-4, 600, 268)" stroke-dasharray="3 8"/>
+  <ellipse cx="600" cy="268" rx="320" ry="90" fill="none" stroke="#a29bfe" stroke-width="0.4" stroke-opacity="0.15" transform="rotate(-2, 600, 268)" stroke-dasharray="2 10"/>
+
+  <!-- ORBIT 1 — Teal (inner): Core stack -->
+  <g><animateMotion dur="22s" repeatCount="indefinite" begin="0s"><mpath href="#orbit1"/></animateMotion>
+    <circle r="4.5" fill="#00cec9" opacity="0.9" filter="url(#softGlow)"/>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#00cec9" text-anchor="middle" font-weight="600">Azure</text>
   </g>
-  <g>
-    <animateMotion dur="20s" repeatCount="indefinite" begin="-5s">
-      <mpath href="#orbit1"/>
-    </animateMotion>
-    <circle r="4" fill="#00cec9" opacity="0.9"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#00cec9" text-anchor="middle">Python</text>
+  <g><animateMotion dur="22s" repeatCount="indefinite" begin="-5.5s"><mpath href="#orbit1"/></animateMotion>
+    <circle r="4" fill="#00cec9" opacity="0.85"/>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#00cec9" text-anchor="middle" font-weight="600">Python</text>
   </g>
-  <g>
-    <animateMotion dur="20s" repeatCount="indefinite" begin="-10s">
-      <mpath href="#orbit1"/>
-    </animateMotion>
+  <g><animateMotion dur="22s" repeatCount="indefinite" begin="-11s"><mpath href="#orbit1"/></animateMotion>
     <circle r="3.5" fill="#00cec9" opacity="0.8"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#00cec9" text-anchor="middle">OCR</text>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#00cec9" text-anchor="middle">OCR</text>
   </g>
-  <g>
-    <animateMotion dur="20s" repeatCount="indefinite" begin="-15s">
-      <mpath href="#orbit1"/>
-    </animateMotion>
+  <g><animateMotion dur="22s" repeatCount="indefinite" begin="-16.5s"><mpath href="#orbit1"/></animateMotion>
     <circle r="3.5" fill="#00cec9" opacity="0.8"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#00cec9" text-anchor="middle">FastAPI</text>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#00cec9" text-anchor="middle">FastAPI</text>
   </g>
 
-  <!-- ORBIT 2 — Orange (middle) -->
-  <g>
-    <animateMotion dur="30s" repeatCount="indefinite" begin="0s">
-      <mpath href="#orbit2"/>
-    </animateMotion>
-    <circle r="4" fill="#e17055" opacity="0.9"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#e17055" text-anchor="middle">YOLOv8</text>
+  <!-- ORBIT 2 — Orange (middle): ML/CV -->
+  <g><animateMotion dur="32s" repeatCount="indefinite" begin="0s"><mpath href="#orbit2"/></animateMotion>
+    <circle r="4.5" fill="#e17055" opacity="0.9" filter="url(#softGlow)"/>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#e17055" text-anchor="middle" font-weight="600">YOLOv8</text>
   </g>
-  <g>
-    <animateMotion dur="30s" repeatCount="indefinite" begin="-7.5s">
-      <mpath href="#orbit2"/>
-    </animateMotion>
-    <circle r="4" fill="#e17055" opacity="0.9"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#e17055" text-anchor="middle">PyTorch</text>
+  <g><animateMotion dur="32s" repeatCount="indefinite" begin="-8s"><mpath href="#orbit2"/></animateMotion>
+    <circle r="4" fill="#e17055" opacity="0.85"/>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#e17055" text-anchor="middle" font-weight="600">PyTorch</text>
   </g>
-  <g>
-    <animateMotion dur="30s" repeatCount="indefinite" begin="-15s">
-      <mpath href="#orbit2"/>
-    </animateMotion>
+  <g><animateMotion dur="32s" repeatCount="indefinite" begin="-16s"><mpath href="#orbit2"/></animateMotion>
     <circle r="3.5" fill="#e17055" opacity="0.8"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#e17055" text-anchor="middle">Docker</text>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#e17055" text-anchor="middle">Docker</text>
   </g>
-  <g>
-    <animateMotion dur="30s" repeatCount="indefinite" begin="-22.5s">
-      <mpath href="#orbit2"/>
-    </animateMotion>
+  <g><animateMotion dur="32s" repeatCount="indefinite" begin="-24s"><mpath href="#orbit2"/></animateMotion>
     <circle r="3.5" fill="#e17055" opacity="0.8"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#e17055" text-anchor="middle">GenAI</text>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#e17055" text-anchor="middle">GenAI</text>
   </g>
 
-  <!-- ORBIT 3 — Purple (outer) -->
-  <g>
-    <animateMotion dur="40s" repeatCount="indefinite" begin="0s">
-      <mpath href="#orbit3"/>
-    </animateMotion>
-    <circle r="4" fill="#a29bfe" opacity="0.8"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#a29bfe" text-anchor="middle">TensorFlow</text>
+  <!-- ORBIT 3 — Purple (outer): Ecosystem -->
+  <g><animateMotion dur="44s" repeatCount="indefinite" begin="0s"><mpath href="#orbit3"/></animateMotion>
+    <circle r="4" fill="#a29bfe" opacity="0.8" filter="url(#softGlow)"/>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#a29bfe" text-anchor="middle">TensorFlow</text>
   </g>
-  <g>
-    <animateMotion dur="40s" repeatCount="indefinite" begin="-6.7s">
-      <mpath href="#orbit3"/>
-    </animateMotion>
-    <circle r="4" fill="#a29bfe" opacity="0.8"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#a29bfe" text-anchor="middle">OpenCV</text>
+  <g><animateMotion dur="44s" repeatCount="indefinite" begin="-7.3s"><mpath href="#orbit3"/></animateMotion>
+    <circle r="3.5" fill="#a29bfe" opacity="0.75"/>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#a29bfe" text-anchor="middle">OpenCV</text>
   </g>
-  <g>
-    <animateMotion dur="40s" repeatCount="indefinite" begin="-13.3s">
-      <mpath href="#orbit3"/>
-    </animateMotion>
+  <g><animateMotion dur="44s" repeatCount="indefinite" begin="-14.7s"><mpath href="#orbit3"/></animateMotion>
+    <circle r="3" fill="#a29bfe" opacity="0.7"/>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#a29bfe" text-anchor="middle">Redis</text>
+  </g>
+  <g><animateMotion dur="44s" repeatCount="indefinite" begin="-22s"><mpath href="#orbit3"/></animateMotion>
     <circle r="3.5" fill="#a29bfe" opacity="0.7"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#a29bfe" text-anchor="middle">Redis</text>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#a29bfe" text-anchor="middle">HuggingFace</text>
   </g>
-  <g>
-    <animateMotion dur="40s" repeatCount="indefinite" begin="-20s">
-      <mpath href="#orbit3"/>
-    </animateMotion>
-    <circle r="3.5" fill="#a29bfe" opacity="0.7"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#a29bfe" text-anchor="middle">HuggingFace</text>
+  <g><animateMotion dur="44s" repeatCount="indefinite" begin="-29.3s"><mpath href="#orbit3"/></animateMotion>
+    <circle r="3" fill="#a29bfe" opacity="0.65"/>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#a29bfe" text-anchor="middle">NLP</text>
   </g>
-  <g>
-    <animateMotion dur="40s" repeatCount="indefinite" begin="-26.7s">
-      <mpath href="#orbit3"/>
-    </animateMotion>
-    <circle r="3" fill="#a29bfe" opacity="0.6"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#a29bfe" text-anchor="middle">NLP</text>
-  </g>
-  <g>
-    <animateMotion dur="40s" repeatCount="indefinite" begin="-33.3s">
-      <mpath href="#orbit3"/>
-    </animateMotion>
-    <circle r="3" fill="#a29bfe" opacity="0.6"/>
-    <text y="-10" font-family="'Courier New', monospace" font-size="11" fill="#a29bfe" text-anchor="middle">MLOps</text>
+  <g><animateMotion dur="44s" repeatCount="indefinite" begin="-36.7s"><mpath href="#orbit3"/></animateMotion>
+    <circle r="3" fill="#a29bfe" opacity="0.65"/>
+    <text y="-12" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#a29bfe" text-anchor="middle">MLOps</text>
   </g>
 
-  <!-- Quote -->
-  <text x="600" y="370" font-family="'Segoe UI', sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-style="italic" opacity="0.6">" Building intelligent systems on Azure Cloud "</text>
+  <!-- Bottom tagline -->
+  <text x="600" y="400" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="11" fill="#4a5568" text-anchor="middle" letter-spacing="3" opacity="0.6">BUILDING INTELLIGENT SYSTEMS ON AZURE CLOUD</text>
 </svg>
