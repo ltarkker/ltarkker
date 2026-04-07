@@ -81,7 +81,7 @@
 
   <!-- Stats -->
   <text x="90" y="48" font-family="'Segoe UI', sans-serif" font-size="10" fill="#4a5568" text-anchor="middle" letter-spacing="3">COMMITS</text>
-  <text x="90" y="85" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#tealGrad)" text-anchor="middle" filter="url(#numGlow)">630</text>
+  <text x="90" y="85" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#tealGrad)" text-anchor="middle" filter="url(#numGlow)">702</text>
   <text x="270" y="48" font-family="'Segoe UI', sans-serif" font-size="10" fill="#4a5568" text-anchor="middle" letter-spacing="3">REPOS</text>
   <text x="270" y="85" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#tealGrad)" text-anchor="middle" filter="url(#numGlow)">73</text>
   <text x="450" y="48" font-family="'Segoe UI', sans-serif" font-size="10" fill="#4a5568" text-anchor="middle" letter-spacing="3">STARS</text>

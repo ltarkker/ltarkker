@@ -19,7 +19,7 @@ fields_of_work:
 currently_building:
   - Multi-Model Invoice Processing (20 AI models)
   - Drone-Based Warehouse Auditing (YOLO26 + DeepSORT)
-fun_fact: "Production AI since age 20 🚀"
+fun_fact: "Production AI since age 20"
 ```
 
 </div>
