@@ -54,9 +54,7 @@ Currently expanding into Computer Vision and Deep Learning, developing custom pr
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Commits-610-00cec9?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/Repos-73-00cec9?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/Stars-16-00cec9?style=for-the-badge&labelColor=0d1117" />
+  <img src="github-stats.svg" alt="GitHub Stats" />
 </p>
 
 ---
