@@ -18,7 +18,7 @@ fields_of_work:
   - GenAI & NLP
 currently_building:
   - Multi-Model Invoice Processing (20 AI models)
-  - Drone-Based Warehouse Auditing (YOLO26 + DeepSORT)
+  - SkyVision Auditor (Drone-Based Warehouse Auditing)
 fun_fact: "Production AI since age 20"
 ```
 
