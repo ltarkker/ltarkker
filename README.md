@@ -13,12 +13,12 @@ job: AI/ML Developer @ COSMOS-OMNI
 fields_of_work:
   - Azure AI & Cloud Architecture
   - MLOps & Pipeline Automation
-  - OCR & Document Intelligence
+  - OCR & Inteligent Document Processing
   - Computer Vision & Deep Learning
   - GenAI & NLP
 currently_building:
-  - Multi-Model Invoice Processing (19 AI models)
-  - Drone-Based Warehouse Auditing (YOLOv8 + DeepSORT)
+  - Multi-Model Invoice Processing (20 AI models)
+  - Drone-Based Warehouse Auditing (YOLO26 + DeepSORT)
 fun_fact: "Production AI since age 20 🚀"
 ```
 

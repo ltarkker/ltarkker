@@ -19,38 +19,29 @@
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-
   <rect width="540" height="130" rx="10" fill="url(#sbg)" stroke="url(#borderGrad)" stroke-width="1"/>
-
-  <!-- Subtle stars -->
-  <circle cx="25" cy="18" r="0.7" fill="white" opacity="0.4"/>
-  <circle cx="85" cy="65" r="0.5" fill="white" opacity="0.3"/>
-  <circle cx="155" cy="12" r="0.8" fill="white" opacity="0.35"/>
-  <circle cx="265" cy="22" r="0.6" fill="white" opacity="0.4"/>
-  <circle cx="385" cy="15" r="0.7" fill="white" opacity="0.35"/>
-  <circle cx="475" cy="30" r="0.5" fill="white" opacity="0.3"/>
-  <circle cx="515" cy="100" r="0.6" fill="white" opacity="0.35"/>
-  <circle cx="50" cy="105" r="0.5" fill="white" opacity="0.3"/>
-  <circle cx="200" cy="95" r="0.4" fill="white" opacity="0.25"/>
-  <circle cx="320" cy="108" r="0.6" fill="white" opacity="0.3"/>
-  <circle cx="440" cy="50" r="0.5" fill="white" opacity="0.25"/>
-
-  <!-- Stat: Commits -->
+  <!-- Twinkling stars -->
+  <circle cx="25" cy="18" r="0.7" fill="white" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="3.5s" repeatCount="indefinite"/></circle>
+  <circle cx="85" cy="65" r="0.5" fill="white" opacity="0.3"><animate attributeName="opacity" values="0.3;0.08;0.3" dur="4.8s" repeatCount="indefinite"/></circle>
+  <circle cx="155" cy="12" r="0.8" fill="white" opacity="0.35"><animate attributeName="opacity" values="0.35;0.1;0.35" dur="5.2s" repeatCount="indefinite"/></circle>
+  <circle cx="265" cy="22" r="0.6" fill="white" opacity="0.4"><animate attributeName="opacity" values="0.4;0.12;0.4" dur="3.8s" repeatCount="indefinite"/></circle>
+  <circle cx="385" cy="15" r="0.7" fill="white" opacity="0.35"><animate attributeName="opacity" values="0.35;0.1;0.35" dur="6s" repeatCount="indefinite"/></circle>
+  <circle cx="475" cy="30" r="0.5" fill="white" opacity="0.3"><animate attributeName="opacity" values="0.3;0.08;0.3" dur="4.2s" repeatCount="indefinite"/></circle>
+  <circle cx="515" cy="100" r="0.6" fill="white" opacity="0.35"><animate attributeName="opacity" values="0.35;0.1;0.35" dur="5.5s" repeatCount="indefinite"/></circle>
+  <circle cx="50" cy="105" r="0.5" fill="white" opacity="0.3"><animate attributeName="opacity" values="0.3;0.08;0.3" dur="7s" repeatCount="indefinite"/></circle>
+  <circle cx="200" cy="95" r="0.4" fill="white" opacity="0.25"><animate attributeName="opacity" values="0.25;0.06;0.25" dur="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="320" cy="108" r="0.6" fill="white" opacity="0.3"><animate attributeName="opacity" values="0.3;0.08;0.3" dur="5.8s" repeatCount="indefinite"/></circle>
+  <circle cx="440" cy="50" r="0.5" fill="white" opacity="0.25"><animate attributeName="opacity" values="0.25;0.06;0.25" dur="6.5s" repeatCount="indefinite"/></circle>
+  <circle cx="130" cy="75" r="0.4" fill="white" opacity="0.3"><animate attributeName="opacity" values="0.3;0.08;0.3" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="350" cy="55" r="0.5" fill="white" opacity="0.25"><animate attributeName="opacity" values="0.25;0.06;0.25" dur="5s" repeatCount="indefinite"/></circle>
+  <!-- Stats -->
   <text x="90" y="48" font-family="'Segoe UI', sans-serif" font-size="10" fill="#4a5568" text-anchor="middle" letter-spacing="3">COMMITS</text>
-  <text x="90" y="85" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#tealGrad)" text-anchor="middle" filter="url(#numGlow)">610</text>
-
-  <!-- Stat: Repos -->
+  <text x="90" y="85" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#tealGrad)" text-anchor="middle" filter="url(#numGlow)">630</text>
   <text x="270" y="48" font-family="'Segoe UI', sans-serif" font-size="10" fill="#4a5568" text-anchor="middle" letter-spacing="3">REPOS</text>
   <text x="270" y="85" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#tealGrad)" text-anchor="middle" filter="url(#numGlow)">73</text>
-
-  <!-- Stat: Stars -->
   <text x="450" y="48" font-family="'Segoe UI', sans-serif" font-size="10" fill="#4a5568" text-anchor="middle" letter-spacing="3">STARS</text>
   <text x="450" y="85" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#tealGrad)" text-anchor="middle" filter="url(#numGlow)">16</text>
-
-  <!-- Dividers -->
   <line x1="180" y1="32" x2="180" y2="100" stroke="#00cec9" stroke-width="0.4" stroke-opacity="0.2"/>
   <line x1="360" y1="32" x2="360" y2="100" stroke="#00cec9" stroke-width="0.4" stroke-opacity="0.2"/>
-
-  <!-- Bottom accent line -->
   <line x1="100" y1="115" x2="440" y2="115" stroke="#00cec9" stroke-width="0.3" stroke-opacity="0.15"/>
 </svg>
