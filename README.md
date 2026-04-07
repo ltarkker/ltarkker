@@ -1,8 +1,30 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:00cec9&height=220&section=header&text=COSMOS%20%F0%9F%8C%8C&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Building%20intelligent%20systems%20on%20Azure%20Cloud&descSize=16&descColor=cccccc&descAlignY=55" />
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:2d3436,50:1a1a2e,100:00cec9&height=220&section=header&text=COSMOS%20%F0%9F%8C%8C&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Building%20intelligent%20systems%20on%20Azure%20Cloud&descSize=16&descColor=eeeeee&descAlignY=55" />
+  <img alt="header" width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:00cec9&height=220&section=header&text=COSMOS%20%F0%9F%8C%8C&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Building%20intelligent%20systems%20on%20Azure%20Cloud&descSize=16&descColor=cccccc&descAlignY=55" />
+</picture>
+
 # Gonçalo L. Fernandes
+
+---
 
 `AI/ML Developer`
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/gonzalo-aiml-dev)
+
+---
+
+```yaml
+name: Gonçalo L. Fernandes
+located_in: Porto, Portugal
+job: AI/ML Developer @ COSMOS-OMNI
+fields_of_work: ["Azure AI", "MLOps", "OCR", "Computer Vision", "Deep Learning", "GenAI", "NLP"]
+tech_stack: ["Azure Cloud", "Python", "YOLOv8", "PyTorch", "FastAPI"]
+currently_building: ["Multi-Model Invoice Systems", "Drone-Based Warehouse Auditing"]
+fun_fact: "Production AI since age 20 🚀"
+```
+
+---
 
 AI/ML Developer building production-grade intelligent systems on Azure Cloud. I design, train, and deploy AI pipelines that process real enterprise data — specializing in multi-model financial document processing with OCR, NLP, and GenAI for B2B enterprise clients across European markets.
 
@@ -29,3 +51,18 @@ Currently expanding into Computer Vision and Deep Learning, developing custom pr
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" width="40" height="40"/>&nbsp;
 </p>
 
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Commits-610-00cec9?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/Repos-73-00cec9?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/Stars-16-00cec9?style=for-the-badge&labelColor=0d1117" />
+</p>
+
+---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:00cec9,50:1a1a2e,100:0d1117&height=100&section=footer" />
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:00cec9,50:1a1a2e,100:2d3436&height=100&section=footer" />
+  <img alt="footer" width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00cec9,50:1a1a2e,100:0d1117&height=100&section=footer" />
+</picture>
