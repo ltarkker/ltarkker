@@ -37,10 +37,10 @@ fun_fact: "Production AI since age 20"
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" width="40"/>&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" width="40"/>&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" width="40"/>&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/swagger-api/swagger-ui/master/dist/favicon-32x32.png" alt="OpenAPI" width="40"/>&nbsp;&nbsp;
+  <img src="https://www.vectorlogo.zone/logos/openapis/openapis-icon.svg" alt="OpenAPI" width="40"/>&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" width="40"/>&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="40"/>&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/onnx/onnx/main/docs/ONNX_logo_main.png" alt="ONNX" width="40" style="border-radius:6px"/>&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/onnx/onnx.github.io/main/images/ONNX-ICON.svg" alt="ONNX" width="40"/>&nbsp;&nbsp;
   <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" width="40"/>&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="40"/>&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" width="40"/>
