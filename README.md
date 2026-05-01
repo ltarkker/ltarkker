@@ -13,7 +13,7 @@ job: AI/ML Developer @ COSMOS-OMNI
 fields_of_work:
   - Azure AI & Cloud Architecture
   - MLOps & Pipeline Automation
-  - OCR & Inteligent Document Processing
+  - OCR & Intelligent Document Processing
   - Computer Vision & Deep Learning
   - GenAI & NLP
 currently_building:
