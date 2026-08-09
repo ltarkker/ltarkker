@@ -17,7 +17,7 @@ fields_of_work:
   - Computer Vision & Deep Learning
   - GenAI & NLP
 currently_building:
-  - Multi-Model Invoice Processing (20 AI models)
+  - Multi-Model Invoice Processing (24 AI models)
   - SkyVision Auditor (Drone-Based Warehouse Auditing)
 fun_fact: "Production AI since age 20"
 ```
