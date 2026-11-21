@@ -50,14 +50,17 @@ fun_fact: "Production AI since age 20"
 
 <div align="center">
 
-AI/ML Developer at **COSMOS-OMNI**, building production AI systems on Azure<br/>
-for B2B clients in **Portugal and Spain**.
+AI/ML Engineer at **COSMOS-OMNI**, building production AI systems on Azure<br/>
+for B2B clients in **Portugal and Spain**, forward-deployed with each client.
 
-**OCR** — invoice classification and extraction pipelines,<br/>
-using custom models in Azure AI Foundry and GPT-4.1, ~110 suppliers, 200+ documents a day.
+**OCR · IDP** — invoice classification and extraction pipelines,<br/>
+using Azure AI Document Intelligence, Azure AI Foundry and GPT-4.1, ~115 suppliers, 200+ documents a day.
 
 **Computer Vision** — Ultralytics YOLO detection models for drone-based warehouse auditing,<br/>
 trained on real client imagery and integrated with the client's WMS, 4 classes, ~12,000 annotations.
+
+**MLOps · LLMOps** — separate TEST and PROD environments, every change validated on real documents<br/>
+before release, extraction cost tracked per page.
 
 </div>
 
